@@ -22,7 +22,8 @@ function Watch(props) {
 }
 
 Watch.propTypes = {
-
+    degMinutes: PropTypes.number.isRequired,
+    degHours: PropTypes.number.isRequired,
 }
 
 export default Watch

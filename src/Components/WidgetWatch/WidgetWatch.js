@@ -1,23 +1,15 @@
 import React, {useState} from 'react';
-// import shortid from 'shortid';
-import PropTypes from 'prop-types';
 import WatchComponent from '../WatchComponent/WatchComponent';
-
-import './WidgetWatch.css'
 import AddWatch from '../AddWatch/AddWatch';
 
-function WidgetWatch(props) {
+import './WidgetWatch.css'
+
+function WidgetWatch() {
 
     const [ watchList, setWatch ] = useState([]);
 
-
-    const handleAddWatch = (data) => {
-        setWatch([...watchList, data]);
-    }
-
-    const handleDelete = (id) => {
-        setWatch( watchList.filter( item => item.id !== id))
-    }
+    const handleAddWatch = (data) => { setWatch([...watchList, data]) }
+    const handleDelete = (id) => { setWatch( watchList.filter( item => item.id !== id)) }
 
     return (
         <div className='widget-watch'>
@@ -29,10 +21,6 @@ function WidgetWatch(props) {
             </div>
         </div>
     )
-}
-
-WidgetWatch.propTypes = {
-
 }
 
 export default WidgetWatch;

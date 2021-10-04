@@ -39,22 +39,13 @@ function AddWatch(props) {
         <form className='form-watch' onSubmit={handleSubmit}>
             <div className="form-title-watch">
                 <label className='form-label' htmlFor="watch-title">Название</label>
-                <input className='title-watch-input' 
-                type="text" onChange={handleChange} 
-                value={watch.title}
-                id='watch-title'
-                name='title'
-                />
+                <input className='title-watch-input' type="text" onChange={handleChange} 
+                value={watch.title} id='watch-title' name='title' />
             </div>
             <div className="form-title-watch">
                 <label className='form-label' htmlFor="watch-zona">Временная зона</label>
-                <input 
-                className='title-watch-input' 
-                type='number'
-                onChange={handleChange} 
-                value={watch.zona} 
-                id='watch-zona'
-                name='zona'/>
+                <input className='title-watch-input' type='number' onChange={handleChange} 
+                value={watch.zona} id='watch-zona' name='zona'/>
             </div>
             <button className='add-button'>добавить</button>
         </form>
@@ -62,7 +53,7 @@ function AddWatch(props) {
 }
 
 AddWatch.propTypes = {
-
+    onAdd: PropTypes.func.isRequired,
 };
 
 export default AddWatch;
