@@ -1,0 +1,31 @@
+.watch-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.wrapper-watch {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.delete::after {
+    content: 'X';
+    display: inline-block;
+}

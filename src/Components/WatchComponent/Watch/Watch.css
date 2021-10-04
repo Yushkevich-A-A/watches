@@ -48,7 +48,7 @@
     display: block;
     width: 0;
     height: 0;
-    border-bottom: 45px solid #000;
+    border-bottom: 50px solid #000;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
 }
@@ -67,9 +67,10 @@
 .arrow-hour::after {
     content: "";
     display: block;
+    
     width: 0;
     height: 0;
-    border-bottom: 40px solid #fff;
+    border-bottom: 35px solid #fff;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
 }
@@ -82,23 +83,4 @@
     border-bottom: 35px solid #000;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-}
-
-.delete {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000;
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.delete::after {
-    content: 'X';
-    display: inline-block;
 }

@@ -1,10 +1,10 @@
 import './App.css';
-import Watch from './Components/Watch/Watch';
+import WidgetWatch from './Components/WidgetWatch/WidgetWatch';
 
 function App() {
   return (
     <div className="App">
-      <Watch />
+      <WidgetWatch />
     </div>
   );
 }
